@@ -1,5 +1,7 @@
 import { Link, useNavigate } from "react-router-dom"
 import "./NavBar.css"
+import { MdHomeFilled } from 'react-icons/md';
+import { TbMapPinFilled } from 'react-icons/tb'
 
 
 
@@ -9,8 +11,8 @@ export const NavBar = () => {
     return (
         <nav className="navbar-container">
             <nav className="nav-right">
-                <Link className="nav-right" to="/home">Home</Link>
-                <Link className="nav-right" to="/explore">Explore</Link>
+                <Link className="nav-link home" to="/home"> <MdHomeFilled /> Home</Link>
+                <Link className="nav-link explore" to="/explore"><TbMapPinFilled />Explore</Link>
             </nav>
             <nav className="nav-left">
             {
@@ -26,9 +28,6 @@ export const NavBar = () => {
                     <>
                         <ul className="nav-item">
                             <Link className="nav-link" to="/login">Login</Link>
-                        </ul>
-                        <ul className="nav-item">
-                            <Link className="nav-link" to="/register">Register</Link>
                         </ul>
                     </>
             }        </nav>

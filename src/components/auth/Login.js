@@ -25,7 +25,7 @@ export const Login = () => {
                         name: res.first_name,
                         token: res.token,
                       }))
-                    navigate()
+                    navigate("/home")
                 }
                 else {
                     invalidDialog.current.showModal()
@@ -40,7 +40,7 @@ export const Login = () => {
                 <button className="button--close" onClick={e => invalidDialog.current.close()}>Close</button>
             </dialog>
             <section>
-                <form className="form--login" onSubmit={handleLogin}>
+                <form className="form--login login" onSubmit={handleLogin}>
                     <h2>Please sign in</h2>
                     <fieldset>
                         <label htmlFor="inputUsername"> Username</label>

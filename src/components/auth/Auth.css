@@ -12,10 +12,14 @@
     padding: 20px;
     border-radius: 10px;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
   }
+
+    .register {
+        margin-left: 20px;
+    }
   
-  .form--login h2 {
+  .form--login h1 {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
@@ -23,22 +27,28 @@
   
   .form--login fieldset {
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    padding: 0;
   }
   
   .form--login label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-weight: bold;
   }
   
-  .form--login input {
+  .form--login input,
+  .form--login textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+  }
+  
+  .form--login textarea {
+    resize: vertical;
   }
   
   .form--login button[type="submit"] {
@@ -64,13 +74,6 @@
   
   /* Tablet styles */
   @media screen and (min-width: 576px) {
-    .container--login {
-      height: auto;
-    }
-  
-    .form--login {
-      max-width: 500px;
-    }
   
     .link--register {
       margin-top: 0;
@@ -90,13 +93,17 @@
     .form--login {
       width: 50%;
       max-width: none;
+      text-align:center;
     }
     
     .link--register {
       margin-top: 0;
-      text-align: left;
+      text-align: center;
       align-self: flex-end;
       width: 50%;
     }
   }
   
+  .btn {
+    padding-bottom: 20px;
+  }
