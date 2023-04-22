@@ -11,8 +11,8 @@ export const NavBar = () => {
     return (
         <nav className="navbar-container">
             <nav className="nav-right">
-                <Link className="nav-link home" to="/home"> <MdHomeFilled /> Home</Link>
-                <Link className="nav-link explore" to="/explore"><TbMapPinFilled />Explore</Link>
+                <Link className="nav-link home" to="/home"><div className="icon"> <MdHomeFilled /></div> Home</Link>
+                <Link className="nav-link explore" to="/explore"><div className="icon"><TbMapPinFilled /></div>Explore</Link>
             </nav>
             <nav className="nav-left">
             {

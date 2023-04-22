@@ -34,7 +34,7 @@ export const Login = () => {
     }
 
     return (
-        <main className="container--login">
+        <main className="container--login login">
             <dialog className="dialog dialog--auth" ref={invalidDialog}>
                 <div>Username or password was not valid.</div>
                 <button className="button--close" onClick={e => invalidDialog.current.close()}>Close</button>
