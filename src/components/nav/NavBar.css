@@ -67,11 +67,15 @@
     }
 
     .icon {
-        display: none;
+        display:none;
     }
   
     .nav-right, .nav-left {
       margin-top: 0;
+    }
+
+    .nav-right {
+        align-self: center;
     }
   
     .nav-left {
