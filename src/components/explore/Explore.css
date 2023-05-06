@@ -1,10 +1,10 @@
-.explore {
+.explore-container {
     display:flex;
     position:fixed;
  }
  .map-container{
     display: flex;
     position:fixed;
-    width:80%;
+    width:100%;
     margin-left: auto;
  }
